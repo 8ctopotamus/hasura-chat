@@ -1,3 +1,33 @@
+# Hasura Chat
+
+A realtime chat application, exploring NextJS, Typescript, Hasura, Auth0, and Bunny.net.
+
+## Technologies Roadmap
+
+* [ ] **Types:** Typescript
+* [x] **Auth:** Auth0
+* [ ] **Database:** [Hasura](https://hasura.io)
+* [ ] **Hosting:** Railway/Render
+* [ ] **File Storage:** [Bunny.net](https://bunny.net/)
+
+## Resources
+* [Auth0 + NextJS Tutorial](https://auth0.com/blog/ultimate-guide-nextjs-authentication-auth0/)
+* [Hasura + Auth0](https://hasura.io/learn/graphql/hasura-authentication/integrations/auth0/)
+
+https://auth0.com/docs/quickstart/webapp/nextjs
+
+https://hasura.io/learn/graphql/nextjs-fullstack-serverless/auth0-setup/
+
+* Next/Hasura/Clerk Tutorial: [https://clerk.dev/tutorials/build-a-cookie-clicker-app-with-clerk-and-hasura](https://clerk.dev/tutorials/build-a-cookie-clicker-app-with-clerk-and-hasura)
+
+https://github.com/auth0/nextjs-auth0/issues/55
+
+https://github.com/vercel/next.js/tree/canary/examples/auth0
+
+---
+
+## NextJS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
