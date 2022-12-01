@@ -1,5 +1,9 @@
 const ScrollView = ({ messages = [] }) => {
-  return <pre>{JSON.stringify(messages, null, 2)}</pre>
+  return (
+    <div className="scrollview">
+      <pre>{JSON.stringify(messages, null, 2)}</pre>
+    </div>
+  )
 }
 
 export default ScrollView

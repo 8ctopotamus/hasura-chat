@@ -40,6 +40,11 @@ input {
   padding: 10px;
 }
 
+.scrollview {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -60,7 +65,6 @@ input {
     padding-right: 10px;
   }
 }
-
 
 .spin-wrap {
   display: flex;

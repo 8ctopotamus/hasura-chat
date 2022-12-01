@@ -1,13 +1,16 @@
 import { useState } from "react"
 
-const Input = () => {
-  const [newMessage, setNewMessage] = useState('')
+const Input = ({ handleSubmit }) => {
+  const [text, setText] = useState('')
 
   return (
-    <form>
+    <form onSubmit={e => {
+      e.preventDefault()
+      handleSubmit(text)
+    }}>
       <input 
-        value={newMessage}
-        onChange={e => setNewMessage(e.target.value)}
+        value={text}
+        onChange={e => setText(e.target.value)}
         placeholder="Type a message..."
         type="text" 
         required
