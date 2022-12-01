@@ -6,12 +6,18 @@ const {
 } = process.env
 
 export default withApiAuthRequired(async function messages(req, res) {
-  
+  const { query } = req.body
+  console.log(query)
+
   if (!NEXT_PUBLIC_HASURA_GRAPHQL_API ||
       !NEXT_PUBLIC_HASURA_GRAPHQL_ADMIN_SECRET) {
     return res.status(500).json({error: 'Backend not configured properly.'})
   }
-  
+
+  if (!query) {
+    return res.status(400).json({error: 'Missing query'})
+  }
+
   // Get Auth0 access token
   const { accessToken } = await getAccessToken(req, res, {
     // scopes: ['openid','profile','email'],
