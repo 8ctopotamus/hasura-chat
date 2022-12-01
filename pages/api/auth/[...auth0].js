@@ -6,7 +6,7 @@ export default handleAuth({
       await handleLogin(req, res, {
         authorizationParams: {
           audience: 'https://vast-terrier-84.hasura.app/v1/graphql',
-          scope: 'openid email',
+          scope: 'openid profile email',
         }
       })
     } catch(error) {

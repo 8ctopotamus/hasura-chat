@@ -1,3 +1,7 @@
+:root {
+  --primary: turquoise;
+}
+
 html,
 body {
   padding: 0;
@@ -15,6 +19,27 @@ a {
   box-sizing: border-box;
 }
 
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -22,5 +47,16 @@ a {
   body {
     color: white;
     background: black;
+  }
+  nav {
+    background-color: var(--primary);
+    color: black;
+  }
+}
+
+@media (max-width: 840px) {
+  .container, nav .container  {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
