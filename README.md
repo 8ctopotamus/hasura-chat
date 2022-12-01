@@ -24,6 +24,9 @@ https://github.com/auth0/nextjs-auth0/issues/55
 
 https://github.com/vercel/next.js/tree/canary/examples/auth0
 
+https://community.auth0.com/t/accesstokenerror-could-not-retrieve-an-access-token-with-scopes-openid-profile-email/61745/12
+https://www.codemochi.com/blog/2020-04-01-how-to-add-auth0-nextjs
+
 ---
 
 ## NextJS
