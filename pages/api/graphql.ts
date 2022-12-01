@@ -7,7 +7,6 @@ const {
 
 export default withApiAuthRequired(async function messages(req, res) {
   const { query, variables = null } = req.body
-  console.log(query)
 
   if (!NEXT_PUBLIC_HASURA_GRAPHQL_API ||
       !NEXT_PUBLIC_HASURA_GRAPHQL_ADMIN_SECRET) {
@@ -23,6 +22,8 @@ export default withApiAuthRequired(async function messages(req, res) {
     // scopes: ['openid','profile','email'],
   })
 
+  // console.log(accessToken)
+
   const response = await fetch(NEXT_PUBLIC_HASURA_GRAPHQL_API, {
     method: 'POST',
     headers: {
@@ -32,6 +33,6 @@ export default withApiAuthRequired(async function messages(req, res) {
     },
     body: JSON.stringify({ query, variables })
   })
-  const test = await response.json()
-  res.status(200).json(test)
+  const json = await response.json()
+  res.status(200).json(json)
 })

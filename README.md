@@ -1,12 +1,12 @@
 # Hasura Chat
 
-A realtime chat application, exploring NextJS, Typescript, Hasura, Auth0, and Bunny.net.
+A chat application, exploring NextJS, Typescript, Hasura, Auth0, and Bunny.net.
 
 ## Technologies Roadmap
 
-* [ ] **Types:** Typescript
+* [x] **Types:** Typescript
 * [x] **Auth:** Auth0
-* [ ] **Database:** [Hasura](https://hasura.io)
+* [x] **Database:** [Hasura](https://hasura.io)
 * [ ] **Hosting:** Railway/Render
 * [ ] **File Storage:** [Bunny.net](https://bunny.net/)
 
@@ -26,6 +26,12 @@ https://github.com/vercel/next.js/tree/canary/examples/auth0
 
 https://community.auth0.com/t/accesstokenerror-could-not-retrieve-an-access-token-with-scopes-openid-profile-email/61745/12
 https://www.codemochi.com/blog/2020-04-01-how-to-add-auth0-nextjs
+
+https://stackoverflow.com/questions/53481976/configuring-subscriptions-with-next-js-and-apollo-client-2
+
+https://hasura.io/blog/building-real-time-chat-apps-with-graphql-streaming-subscriptions/
+
+https://hasura.io/learn/graphql/hasura/authorization/1-todos-table-permissions/
 
 ---
 
