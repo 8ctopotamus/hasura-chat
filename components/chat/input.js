@@ -7,6 +7,7 @@ const Input = ({ handleSubmit }) => {
     <form onSubmit={e => {
       e.preventDefault()
       handleSubmit(text)
+      setText('')
     }}>
       <input 
         value={text}

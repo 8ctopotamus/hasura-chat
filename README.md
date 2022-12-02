@@ -33,6 +33,10 @@ https://hasura.io/blog/building-real-time-chat-apps-with-graphql-streaming-subsc
 
 https://hasura.io/learn/graphql/hasura/authorization/1-todos-table-permissions/
 
+https://github.com/sondh0127/nextjs-hasura-fullstack/blob/master/nextjs/src/lib/apolloClient.tsx
+
+[Graphql-ws Example in vanilla React](https://github.com/enisdenjo/graphql-ws/discussions/232)
+
 ---
 
 ## NextJS
