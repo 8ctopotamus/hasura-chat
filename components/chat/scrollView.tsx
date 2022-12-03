@@ -1,7 +1,9 @@
-const ScrollView = ({ messages = [] }) => {
+import { ReactNode } from 'react'
+
+const ScrollView = ({ children } : {children: ReactNode}) => {
   return (
     <div className="scrollview">
-      <pre>{JSON.stringify(messages, null, 2)}</pre>
+      {children}
     </div>
   )
 }

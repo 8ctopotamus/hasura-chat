@@ -3,18 +3,16 @@ import { useUser, withPageAuthRequired } from "@auth0/nextjs-auth0"
 import Nav from '../components/nav'
 import ScrollView from '../components/chat/scrollView'
 import Input from '../components/chat/input'
+import Bubble from '../components/chat/bubble'
 import Spinner from '../components/spinner'
 import { hasuraFetch } from '../utils/helpers'
 import useGraphQLWS from '../hooks/useGraphQLWS'
+import { Message } from "../utils/types"
 
 const Chat = () => {
   const { user, error: userError, isLoading } = useUser()
-  const { value, done } = useGraphQLWS()
+  const { value } = useGraphQLWS()
   const [messages, setMessages] = useState<any>([])
-
-  console.log('NEW BATCH', value)
-
-  console.log('CURRENT MESSAGES', messages)
   
   useEffect(() => {
     const newMessages = value?.data?.messages_stream
@@ -48,8 +46,16 @@ const Chat = () => {
     <Nav />
     <div className='container'>
       {(user && messages?.length > 0)
-        ? <ScrollView messages={messages} />
-        : <Spinner />}
+        ? (
+          <ScrollView>
+            {messages.map((m: Message) => (
+              <Bubble 
+                message={m} 
+                userId={user.sub} 
+              />
+            ))}
+          </ScrollView>
+        ): <Spinner />}
       <Input handleSubmit={handleSubmit} />
     </div>
   </>
