@@ -1,5 +1,9 @@
 :root {
-  --primary: turquoise;
+  --black: #0A100D;
+  --primary: #40e0d0;
+  --primaryDark: #21a497;
+  --secondary: #858ae3;
+  --secondaryDark: #613dc1;
 }
 
 html,
@@ -53,8 +57,8 @@ input {
 .bubble > div {
   border-radius: 10px;
   display: inline-block;
-  background-color: hotpink;
-  color: black;
+  background-color: var(--secondary);
+  color: var(--black);
   padding: 10px;
 }
 
@@ -64,7 +68,7 @@ input {
 }
 
 .bubble.me > div {
-  background-color: var(--primary);
+  background-color: var(--primaryDark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,11 +77,11 @@ input {
   }
   body {
     color: white;
-    background: black;
+    background: var(--black);
   }
   nav {
     background-color: var(--primary);
-    color: black;
+    color: var(--black);
   }
 }
 

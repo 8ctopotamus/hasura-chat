@@ -2,6 +2,8 @@
 
 A chat application, exploring NextJS, Typescript, Hasura, Auth0, and Bunny.net.
 
+## ⚠ TODO: Avoid using env vars in `hooks/useGraphQLWS` hook.
+
 ## Technologies Roadmap
 
 * [x] **Types:** Typescript
